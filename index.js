@@ -7,10 +7,10 @@ const names = ["Halo", "Angel", "Nyoman", "Ketut", "Aisyah"];
 // "2. Nama"
 // ...
 const sorter = (namesArray, sortAscendDescend)  => {
-  let x = sortAscendDescend(namesArray);
+  let arraySorted = sortAscendDescend(namesArray); //invoke hasil function sortAscending/sortDescending ke dalam var arraySorted
   let arrayNew = [];
   for (let index = 0; index < namesArray.length; index++) {
-    let dataNew = (index + 1).toString() + ". " + x[index];
+    let dataNew = (index + 1).toString() + ". " + arraySorted[index];
     arrayNew.push(dataNew);
   }
   return arrayNew;
